@@ -52,6 +52,78 @@
   }
 }
 
+/* Small devices custom width (0px and max 768px) */
+@media (min-width: 0px) and (max-width: 767.98px) {
+  #breadcrumb {
+    width: 100%;
+  }
+
+  #restaurant-container, #reviews-container {
+    width: 100%;
+  }
+
+  .inside #map-container {
+    top: 130px;
+    height: 50vh;
+    position: relative;
+    width: 100%;
+  }
+
+  #restaurant-img {
+    display: inherit;
+    border-top-left-radius: 25px;
+    box-shadow: 4px 4px 10px 0 rgba(221, 221, 221, 0.2);
+  }
+
+  #restaurant-cuisine {
+    padding: 20px 0;
+    border-bottom-right-radius: 25px;
+    box-shadow: 4px 4px 10px 0 rgba(221, 221, 221, 0.2);
+  }
+
+  #reviews-list li {
+    overflow: initial;
+    padding: 0px 15px 20px;
+    border: 0;
+    border-top: 50px solid #333;
+    box-shadow: 4px 4px 10px 0 rgba(221, 221, 221, 0.2);
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  #reviews-list li p:first-child,
+  #reviews-list li p:nth-child(2) {
+    display: inline;
+    position: relative;
+    color: #fff;
+    top: -33px;
+  }
+
+  #reviews-list li p:first-child {
+    font-size: 21px;
+    top: -41px;
+  }
+
+  #reviews-list li p:nth-child(2) {
+    position: absolute;
+    right: 20px;
+    color: #aaa;
+  }
+
+  #reviews-list li p:nth-child(3) {
+    margin: 0 0 20px;
+    background-color: #f8a400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    line-height: 1;
+    border-radius: 2px;
+    display: table;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .container {
